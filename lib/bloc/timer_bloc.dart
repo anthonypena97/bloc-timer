@@ -16,7 +16,7 @@ class TimerBloc extends Bloc<TimerEvent, TimerState>{
 
   @override
   Future<void> close(){
-    _tickerSubscription?cancel();
+    _tickerSubscription?.cancel();
     return super.close();
   }
 

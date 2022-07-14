@@ -17,7 +17,7 @@ class TimerPaused extends TimerEvent {
 }
 
 class TimerResumed extends TimerEvent {
-  const TimerReset();
+  const TimerResumed();
 }
 
 class TimerReset extends TimerEvent{
@@ -29,5 +29,5 @@ class TimerTicked extends TimerEvent{
   final int duration;
 
   @override
-  List<Object> get props => [duration]
+  List<Object> get props => [duration];
 }

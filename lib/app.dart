@@ -5,6 +5,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context){
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Timer',
       theme: ThemeData(
         primaryColor: Color.fromRGBO(109, 234, 255, 1),

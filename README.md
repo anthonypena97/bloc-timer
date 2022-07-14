@@ -5,7 +5,7 @@
 ![Mac OS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0)
 ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)
 
-![Timer](https://user-images.githubusercontent.com/79285555/179053360-c5b3f461-3ad8-4866-9e46-a17298e13526.gif)
+<img width="269" alt="Timer" src="https://user-images.githubusercontent.com/79285555/179053360-c5b3f461-3ad8-4866-9e46-a17298e13526.gif">
 
 BLoC Timer is a simple application for counting down 1 minute.
 

@@ -26,9 +26,9 @@ class TimerView extends StatelessWidget {
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
+            children: const <Widget>[
               Padding(
-                padding: EdgeInsets.symmetric(veritcal: 100.0),
+                padding: EdgeInsets.symmetric(vertical: 100.0),
                 child:Center(child: TimerText()),
               ),
               Actions(),
@@ -44,9 +44,10 @@ class TimerText extends StatelessWidget{
   const TimerText({Key?key}) : super(key:key);
   @override
   Widget build(BuildContext context){
-    final duration = context.select((TimerBloc bloc)) => blac.state.duration);
+    final duration = context.select((TimerBloc bloc) => bloc.state.duration);
     final minutesStr =
     ((duration / 60) %60).floor().toString().padLeft(2,'0');
+    final secondsStr = (duration % 60).floor().toString().padLeft(2,'0');
     return Text(
     '$minutesStr:$secondsStr',
     style: Theme.of(context).textTheme.headline1,
